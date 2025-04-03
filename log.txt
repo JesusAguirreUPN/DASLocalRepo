@@ -1,0 +1,245 @@
+dasupn@dasupn-VirtualBox:~$ sudo passwd root
+[sudo] contraseña para dasupn: 
+
+Lo siento, pruebe otra vez.
+[sudo] contraseña para dasupn: 
+
+
+Lo siento, pruebe otra vez.
+[sudo] contraseña para dasupn: 
+sudo: 3 intentos de contraseña incorrectos
+dasupn@dasupn-VirtualBox:~$ sudo passwd root
+[sudo] contraseña para dasupn: 
+Nueva contraseña: 
+CONTRASEÑA INCORRECTA: No se ha proporcionado ninguna contraseña
+Vuelva a escribir la nueva contraseña: 
+Las contraseñas no coinciden.
+Nueva contraseña: 
+Vuelva a escribir la nueva contraseña: 
+passwd: contraseña actualizada correctamente
+dasupn@dasupn-VirtualBox:~$ sudo apt-get install git
+Leyendo lista de paquetes... Hecho
+Creando árbol de dependencias... Hecho
+Leyendo la información de estado... Hecho
+git ya está en su versión más reciente (1:2.34.1-1ubuntu1.11).
+Los paquetes indicados a continuación se instalaron de forma automática y ya no son necesarios.
+  libflashrom1 libftdi1-2 libllvm13 linux-headers-5.15.0-43
+  linux-headers-5.15.0-43-generic linux-image-5.15.0-43-generic
+  linux-modules-5.15.0-43-generic linux-modules-extra-5.15.0-43-generic
+Utilice «sudo apt autoremove» para eliminarlos.
+0 actualizados, 0 nuevos se instalarán, 0 para eliminar y 3 no actualizados.
+dasupn@dasupn-VirtualBox:~$ git config --global user.name "JesusAguirreUPN"
+dasupn@dasupn-VirtualBox:~$ git config --global user.email "n00325354@upn.pe"
+dasupn@dasupn-VirtualBox:~$ git config --list
+user.name=JesusAguirreUPN
+user.email=n00325354@upn.pe
+dasupn@dasupn-VirtualBox:~$ mkdir DASLocalReporte
+dasupn@dasupn-VirtualBox:~$ ls
+DASLocalRepo   DASLocalReporte  Documentos  Imágenes  Plantillas  snap
+DASLocalRepor  Descargas        Escritorio  Música    Público     Vídeos
+dasupn@dasupn-VirtualBox:~$ cd Escritorio
+dasupn@dasupn-VirtualBox:~/Escritorio$ DASLOcalRepo
+DASLOcalRepo: orden no encontrada
+dasupn@dasupn-VirtualBox:~/Escritorio$ mkdir DASLocalRepo
+dasupn@dasupn-VirtualBox:~/Escritorio$ ls
+DASLocalRepo
+dasupn@dasupn-VirtualBox:~/Escritorio$ git init DASLocalRepo/
+ayuda: Usando 'master' como el nombre de la rama inicial. Este nombre de rama predeterminado
+ayuda: está sujeto a cambios. Para configurar el nombre de la rama inicial para usar en todos
+ayuda: de sus nuevos repositorios, reprimiendo esta advertencia, llama a:
+ayuda: 
+ayuda: 	git config --global init.defaultBranch <nombre>
+ayuda: 
+ayuda: Los nombres comúnmente elegidos en lugar de 'master' son 'main', 'trunk' y
+ayuda: 'development'. Se puede cambiar el nombre de la rama recién creada mediante este comando:
+ayuda: 
+ayuda: 	git branch -m <nombre>
+Inicializado repositorio Git vacío en /home/dasupn/Escritorio/DASLocalRepo/.git/
+dasupn@dasupn-VirtualBox:~/Escritorio$ cd DASLocalRepo/
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ gedit README
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ gedit programa.c
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git status
+En la rama master
+
+No hay commits todavía
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+	README
+	programa.c
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git add README
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git add programa.c
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git status
+En la rama master
+
+No hay commits todavía
+
+Cambios a ser confirmados:
+  (usa "git rm --cached <archivo>..." para sacar del área de stage)
+	nuevos archivos: README
+	nuevos archivos: programa.c
+
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git commit -m "mi primer commit"
+[master (commit-raíz) f882193] mi primer commit
+ 2 files changed, 6 insertions(+)
+ create mode 100644 README
+ create mode 100644 programa.c
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git log
+commit f88219381295a51780387049ef075a268b615d1e (HEAD -> master)
+Author: JesusAguirreUPN <n00325354@upn.pe>
+Date:   Wed Apr 2 22:28:04 2025 -0500
+
+    mi primer commit
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/dasupn/.ssh/id_rsa): 
+/home/dasupn/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/dasupn/.ssh/id_rsa
+Your public key has been saved in /home/dasupn/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:JVFVfgF6uR+EvVMn2pg7sNDXtUBF14Ro0kSbLZSj7Zs dasupn@dasupn-VirtualBox
+The key's randomart image is:
++---[RSA 3072]----+
+|        ...==*=*+|
+|         ...O== +|
+|        . .*+*+o=|
+|         +. oB++=|
+|        S o.=.o= |
+|         . +... o|
+|          . oo . |
+|            E.   |
+|                 |
++----[SHA256]-----+
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ cd..
+cd..: orden no encontrada
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ cd ..
+dasupn@dasupn-VirtualBox:~/Escritorio$ cd .
+dasupn@dasupn-VirtualBox:~/Escritorio$ cd ..
+dasupn@dasupn-VirtualBox:~$ cd .ssh
+dasupn@dasupn-VirtualBox:~/.ssh$ pwd
+/home/dasupn/.ssh
+dasupn@dasupn-VirtualBox:~/.ssh$ ls
+id_rsa  id_rsa.pub  known_hosts  known_hosts.old
+dasupn@dasupn-VirtualBox:~/.ssh$ cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDnzphgiGAQxfQ9ViFw1dYW6OLP44GvIaK7E2DRehtGpj7XirpkfCI5blppSAt5k+Pq8GRao9BYOTtiWaWmIXV9wMDSxM3seyWYdq0ngZZcbUUmM5gHyegwkkxNuaPWe8XedmJ2guHngHp8EN2fHwJDQmQGKdJXDf1BE3BeGgUpmjtXihEz9SxyAU2H7Tr+30qZQVsxdZXu+ldKR0FY+ps78xoNwkjWxnxRsU3CnM/Ki81HV8YUCkvA2lmwWJf+kQnZvnC8f+2Z35wHlktlGM4be5vzewxSy5LM9BxydLC6Vk8BC6VHmXQfUR04dVZ8z+dlfLyZqzIPhpIW6m2glbYMoOqDrNcEzAJN6+4tlI1kkD/4yKtE3b4UPyInhM0Zzil7gIBrg+tpf/3xya62TZ+JhCgEVE8/b+I2+3G6ele/m2SKtz9HSvP+AJoELnW8a4tFDmjAE5OF+JtIbfJPAQ0M3xY2usMxXkVwl8CNZUL+hFlFZysBgK/LTKI3IE7kQOk= dasupn@dasupn-VirtualBox
+dasupn@dasupn-VirtualBox:~/.ssh$ git remote add origin https://github.com/JesusAguirreUPN/DASLocalRepo.git
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+dasupn@dasupn-VirtualBox:~/.ssh$ cd ..
+dasupn@dasupn-VirtualBox:~$ cd Escritorio/DASLocalRepo
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git remote add origin https://github.com/JesusAguirreUPN/DASLocalRepo.git
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git remote -v
+origin	https://github.com/JesusAguirreUPN/DASLocalRepo.git (fetch)
+origin	https://github.com/JesusAguirreUPN/DASLocalRepo.git (push)
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git remote rm origin
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git remote -v
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ ssh-add ~/.ssh/id_rsa
+Identity added: /home/dasupn/.ssh/id_rsa (dasupn@dasupn-VirtualBox)
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ ssh -vT git@github.com
+OpenSSH_8.9p1 Ubuntu-3ubuntu0.7, OpenSSL 3.0.2 15 Mar 2022
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: include /etc/ssh/ssh_config.d/*.conf matched no files
+debug1: /etc/ssh/ssh_config line 21: Applying options for *
+debug1: Connecting to github.com [140.82.113.4] port 22.
+debug1: Connection established.
+debug1: identity file /home/dasupn/.ssh/id_rsa type 0
+debug1: identity file /home/dasupn/.ssh/id_rsa-cert type -1
+debug1: identity file /home/dasupn/.ssh/id_ecdsa type -1
+debug1: identity file /home/dasupn/.ssh/id_ecdsa-cert type -1
+debug1: identity file /home/dasupn/.ssh/id_ecdsa_sk type -1
+debug1: identity file /home/dasupn/.ssh/id_ecdsa_sk-cert type -1
+debug1: identity file /home/dasupn/.ssh/id_ed25519 type -1
+debug1: identity file /home/dasupn/.ssh/id_ed25519-cert type -1
+debug1: identity file /home/dasupn/.ssh/id_ed25519_sk type -1
+debug1: identity file /home/dasupn/.ssh/id_ed25519_sk-cert type -1
+debug1: identity file /home/dasupn/.ssh/id_xmss type -1
+debug1: identity file /home/dasupn/.ssh/id_xmss-cert type -1
+debug1: identity file /home/dasupn/.ssh/id_dsa type -1
+debug1: identity file /home/dasupn/.ssh/id_dsa-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.7
+debug1: Remote protocol version 2.0, remote software version 9b8371b54
+debug1: compat_banner: no match: 9b8371b54
+debug1: Authenticating to github.com:22 as 'git'
+debug1: load_hostkeys: fopen /home/dasupn/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU
+debug1: load_hostkeys: fopen /home/dasupn/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host 'github.com' is known and matches the ED25519 host key.
+debug1: Found key in /home/dasupn/.ssh/known_hosts:1
+debug1: ssh_packet_send2_wrapped: resetting send seqnr 3
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: ssh_packet_read_poll2: resetting read seqnr 3
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: get_agent_identities: bound agent to hostkey
+debug1: get_agent_identities: agent returned 2 keys
+debug1: Will attempt key: /home/dasupn/.ssh/id_rsa RSA SHA256:JVFVfgF6uR+EvVMn2pg7sNDXtUBF14Ro0kSbLZSj7Zs agent
+debug1: Will attempt key: dasupn@dasupn-VirtualBox RSA SHA256:1iORtgqHo4mlmBWGysqTwIuDmTRjHo6MmXCKrR94IYs agent
+debug1: Will attempt key: /home/dasupn/.ssh/id_ecdsa 
+debug1: Will attempt key: /home/dasupn/.ssh/id_ecdsa_sk 
+debug1: Will attempt key: /home/dasupn/.ssh/id_ed25519 
+debug1: Will attempt key: /home/dasupn/.ssh/id_ed25519_sk 
+debug1: Will attempt key: /home/dasupn/.ssh/id_xmss 
+debug1: Will attempt key: /home/dasupn/.ssh/id_dsa 
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<ssh-ed25519-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,sk-ecdsa-sha2-nistp256-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,ssh-ed25519,ecdsa-sha2-nistp521,ecdsa-sha2-nistp384,ecdsa-sha2-nistp256,rsa-sha2-512,rsa-sha2-256,ssh-rsa>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Offering public key: /home/dasupn/.ssh/id_rsa RSA SHA256:JVFVfgF6uR+EvVMn2pg7sNDXtUBF14Ro0kSbLZSj7Zs agent
+debug1: Server accepts key: /home/dasupn/.ssh/id_rsa RSA SHA256:JVFVfgF6uR+EvVMn2pg7sNDXtUBF14Ro0kSbLZSj7Zs agent
+Authenticated to github.com ([140.82.113.4]:22) using "publickey".
+debug1: channel 0: new [client-session]
+debug1: Entering interactive session.
+debug1: pledge: filesystem
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_hostkeys: searching /home/dasupn/.ssh/known_hosts for github.com / (none)
+debug1: client_input_hostkeys: searching /home/dasupn/.ssh/known_hosts2 for github.com / (none)
+debug1: client_input_hostkeys: hostkeys file /home/dasupn/.ssh/known_hosts2 does not exist
+debug1: client_input_hostkeys: no new or deprecated keys from server
+debug1: Sending environment.
+debug1: channel 0: setting env LANG = "es_PE.UTF-8"
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+Hi JesusAguirreUPN! You've successfully authenticated, but GitHub does not provide shell access.
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 3212, received 2968 bytes, in 0.2 seconds
+Bytes per second: sent 16521.7, received 15266.6
+debug1: Exit status 1
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: No se pudo leer del repositorio remoto.
+
+Por favor asegúrate de que tengas los permisos de acceso correctos
+y que el repositorio exista.
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git remote -v
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git remote add origin git@github.com:JesusAguirreUPN/DASLocalRepo.git
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git remote -v
+origin	git@github.com:JesusAguirreUPN/DASLocalRepo.git (fetch)
+origin	git@github.com:JesusAguirreUPN/DASLocalRepo.git (push)
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ git push origin master
+Enumerando objetos: 4, listo.
+Contando objetos: 100% (4/4), listo.
+Compresión delta usando hasta 3 hilos
+Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos: 100% (4/4), 325 bytes | 325.00 KiB/s, listo.
+Total 4 (delta 0), reusados 0 (delta 0), pack-reusados 0
+To github.com:JesusAguirreUPN/DASLocalRepo.git
+ * [new branch]      master -> master
+dasupn@dasupn-VirtualBox:~/Escritorio/DASLocalRepo$ 
